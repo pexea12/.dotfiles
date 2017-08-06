@@ -1,4 +1,4 @@
-config/.config/nvim/plugged
+config/.config/nvim/plugged/*
 config/.config/sublime-text-3/*
 !config/.config/sublime-text-3/Local
 !config/.config/sublime-text-3/Packages/User/Package Control.sublime-settings
