@@ -1,6 +1,7 @@
 config/.config/nvim/plugged/*
 
 config/.config/sublime-text-3/Packages/User/*
+!config/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 config/.config/sublime-text-3/Packages/*
 !config/.config/sublime-text-3/Packages/User
 config/.config/sublime-text-3/*
