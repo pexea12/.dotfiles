@@ -1,0 +1,28 @@
+[user]
+	email = dungtoanhoc@yahoo.com.vn
+	name = Nguyen Thien Dzung
+[alias]
+	cm = commit -m
+	a = add .
+	pl = pull origin
+	p = push origin
+	ch = checkout
+	b = branch
+	f = fetch origin
+	cft = "!f() { git cm \"feat($2): $1\"; }; f"
+	cfx = "!f() { git cm \"fix($2): $1\"; }; f"
+	cdc = "!f() { git cm \"docs($2): $1\"; }; f"
+	csl = "!f() { git cm \"style($2): $1\"; }; f"
+	crf = "!f() { git cm \"refactor($2): $1\"; }; f"
+	cts = "!f() { git cm \"test($2): $1\"; }; f"
+	ccr = "!f() { git cm \"chore($2): $1\"; }; f"
+
+	acm = "!f() { git a . && git cm \"$1\"; }; f"
+	acft = "!f() { git a . && git cft \"$1\" \"$2\"; }; f"
+	accr = "!f() { git a . && git ccr \"$1\" \"$2\"; }; f"
+	acrf = "!f() { git a . && git crf \"$1\" \"$2\"; }; f"
+	acsl = "!f() { git a . && git csl \"$1\" \"$2\"; }; f"
+	acfx = "!f() { git a . && git cfx \"$1\" \"$2\"; }; f"
+	acdc = "!f() { git a . && git cdc \"$1\" \"$2\"; }; f"
+	acts = "!f() { git a . && git cts \"$1\" \"$2\"; }; f"
+

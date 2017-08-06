@@ -1,0 +1,19 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"1337 Color Scheme",
+		"AdvancedNewFile",
+		"ayu",
+		"Colorsublime",
+		"EditorConfig",
+		"Emmet",
+		"Package Control",
+		"Vn Ime",
+		"Vue Syntax Highlight",
+		"Vuejs Snippets"
+	]
+}
