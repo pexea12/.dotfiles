@@ -1,0 +1,1 @@
+/home/pexea12/.zprofile
