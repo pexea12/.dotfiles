@@ -8,7 +8,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mattn/emmet-vim'
-Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-surround'
 
@@ -23,8 +22,6 @@ set exrc
 set secure
 set encoding=utf-8
 
-let g:gruvbox_italic=1
-colorscheme gruvbox
 set background=dark
 
 set number
