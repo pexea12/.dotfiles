@@ -1,17 +1,25 @@
 {
 	"color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
-	"theme": "ayu-mirage.sublime-theme",
+	"folder_exclude_patterns":
+	[
+		"node_modules",
+		".git",
+		"venv"
+	],
 	"font_face": "Fira Code",
-	"font_size": 11,
+	"font_size": 12,
 	"ignored_packages":
 	[
 	],
-	"ui_separator": true, 
-	"ui_font_size_small": true, 
-	"ui_big_tabs": true, 
-	"ui_fix_tab_labels": true, 
+	"telex": true,
+	"theme": "ayu-mirage.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"ui_big_tabs": true,
+	"ui_fix_tab_labels": true,
+	"ui_font_default": true,
+	"ui_font_size_small": true,
 	"ui_font_source_code_pro": true,
-	"ui_font_default": true, 
-	"ui_wide_scrollbars": true, 
-	"ui_sidebar_highlight_row": true  
+	"ui_separator": true,
+	"ui_sidebar_highlight_row": true,
+	"ui_wide_scrollbars": true
 }

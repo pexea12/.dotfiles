@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/pexea12/repos/computer-vision/demo/face-alignment'
+let g:netrw_dirhist_2='/home/pexea12/repos/face/face-core/face_detection'
+let g:netrw_dirhist_3='/home/pexea12/.dotfiles/config/.config/nvim'
+let g:netrw_dirhist_4='/home/pexea12/repos/face/face-core/temp/train_images'
+let g:netrw_dirhist_5='/home/pexea12/repos/face/face-core/temp'
+let g:netrw_dirhist_6='/media/Library/Computer Science/Image Processing/Computer Vision/brown/projHybridImages'
+let g:netrw_dirhist_7='/media/Library/Computer Science/Image Processing/Computer Vision/brown/projHybridImages/code'
