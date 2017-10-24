@@ -9,10 +9,16 @@
 		"ayu",
 		"Babel",
 		"EditorConfig",
+<<<<<<< HEAD
 		"Emmet",
 		"Package Control",
 		"Vn Ime",
 		"Vue Syntax Highlight",
 		"Vuejs Snippets"
+=======
+		"Package Control",
+		"TOML",
+		"Vn Ime"
+>>>>>>> dda82bcfdf4f5e1549f9412b394dc85a411c2922
 	]
 }
