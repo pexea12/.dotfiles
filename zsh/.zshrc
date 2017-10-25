@@ -1,1 +1,0 @@
-/home/pexea12/.zshrc
