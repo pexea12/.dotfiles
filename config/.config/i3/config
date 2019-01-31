@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -162,14 +162,15 @@ exec_always feh --bg-scale ~/.config/i3/test_wallpaper.jpg
 # Print Screen
 bindsym Print exec scrot ~/foo.png && xclip -selection clipboard -t image/png ~/foo.png && rm -rf ~/foo.png
 bindsym --release $mod+Print exec scrot -s ~/foo.png && xclip -selection clipboard -t image/png ~/foo.png && rm -rf ~/foo.png
+bindsym $mod+Shift+Print exec scrot -u ~/foo.png && xclip -selection clipboard -t image/png ~/foo.png && rm -rf ~/foo.png
 
 # Touchpad
 exec_always synclient HorizTwoFingerScroll=1 VertScrollDelta=-111 HorizScrollDelta=-111 PalmDetect=1 TapButton2=3 TapButton1=1
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
 # Unikey
 exec_always --no-startup-id ibus-daemon --xim

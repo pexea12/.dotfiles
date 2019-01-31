@@ -53,6 +53,7 @@ set splitright
 map <C-k> :NERDTreeToggle<CR>
 nmap <Leader>ev :tabedit $MYVIMRC<CR>
 nmap <Leader><space> :nohlsearch<CR>
+map <C-b> :CtrlPBuffer<CR>
 
 " Auto Commands
 "

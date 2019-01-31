@@ -4,10 +4,11 @@
 	[
 		".git",
 		"vendor",
-		"node_modules"
+		"node_modules",
+        "venv"
 	],
 	"font_face": "Fira Code",
-	"font_size": 14,
+	"font_size": 12,
 	"ignored_packages":
 	[
 	],

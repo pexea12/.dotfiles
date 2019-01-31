@@ -11,9 +11,10 @@
 		"EditorConfig",
 		"Emmet",
 		"Package Control",
+		"Vn Ime",
+		"Vue Syntax Highlight",
+		"Vuejs Snippets"
 		"Pug",
 		"TOML",
-		"Vn Ime",
-		"Vue Syntax Highlight"
 	]
 }
