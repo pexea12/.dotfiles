@@ -9,8 +9,11 @@
 		"ayu",
 		"Babel",
 		"EditorConfig",
+		"Emmet",
 		"Package Control",
+		"Pug",
 		"TOML",
-		"Vn Ime"
+		"Vn Ime",
+		"Vue Syntax Highlight"
 	]
 }

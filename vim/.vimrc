@@ -10,6 +10,12 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mattn/emmet-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-surround'
+Plug 'arnaud-lb/vim-php-namespace'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'posva/vim-vue'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'zyedidia/vim-snake'
 
 call plug#end()
 
@@ -28,6 +34,16 @@ set number
 set hlsearch
 set incsearch
 
+" Paste shortcut
+set pastetoggle=<F2>
+
+" Auto close brackets
+noremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+
 
 " Split
 set splitbelow
@@ -40,11 +56,15 @@ nmap <Leader><space> :nohlsearch<CR>
 
 " Auto Commands
 "
-
 augroup autosourcing
     autocmd!
     autocmd BufWritePost .vimrc source %
 augroup END
+
+" ctrlp
+let g:ctrlp_custom_ignore = 'node_modules\|\.git\|vendor'
+let g:ctrlp_show_hidden = 1
+
 
 " air-line
 let g:airline_powerline_fonts = 1
@@ -52,6 +72,7 @@ let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
+
 
 " unicode symbols
 let g:airline_left_sep = '»'
@@ -67,6 +88,7 @@ let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
+
 " airline symbols
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
@@ -75,3 +97,18 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+
+" PHP import classes or functions
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a',  'n')
+endfunction
+
+autocmd FileType php inoremap <Leader>n <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <Leader>n :call PhpInsertUse()<CR>
+
+
+" Emmet config
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,vue EmmetInstall

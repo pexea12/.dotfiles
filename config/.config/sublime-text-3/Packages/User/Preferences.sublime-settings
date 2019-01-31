@@ -1,7 +1,13 @@
 {
 	"color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
+	"folder_exclude_patterns":
+	[
+		".git",
+		"vendor",
+		"node_modules"
+	],
 	"font_face": "Fira Code",
-	"font_size": 11,
+	"font_size": 14,
 	"ignored_packages":
 	[
 	],
