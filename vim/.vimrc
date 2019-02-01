@@ -7,9 +7,9 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'editorconfig/editorconfig-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'mattn/emmet-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-surround'
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
@@ -28,6 +28,8 @@ set number
 set hlsearch
 set incsearch
 
+let python_highlight_all = 1
+let g:vim_json_syntax_conceal = 0
 
 " Split
 set splitbelow
@@ -76,3 +78,5 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+

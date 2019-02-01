@@ -1,25 +1,20 @@
 {
-	"color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
-<<<<<<< HEAD
+	"always_show_minimap_viewport": false,
+	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"folder_exclude_patterns":
 	[
 		"node_modules",
 		".git",
 		"venv"
 	],
-=======
->>>>>>> dda82bcfdf4f5e1549f9412b394dc85a411c2922
 	"font_face": "Fira Code",
 	"font_size": 12,
 	"ignored_packages":
 	[
 	],
-<<<<<<< HEAD
-=======
 	"tab_size": 4,
->>>>>>> dda82bcfdf4f5e1549f9412b394dc85a411c2922
 	"telex": true,
-	"theme": "ayu-mirage.sublime-theme",
+	"theme": "ayu-dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"ui_big_tabs": true,
 	"ui_fix_tab_labels": true,

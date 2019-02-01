@@ -35,7 +35,7 @@ URxvt.allow_bold:          true
 /* URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
 URxvt*font: xft:Fira Code:pixelsize=16
 URxvt*boldFont: xft:Fira Code:pixelsize=16
-URxvt*letterSpace: 0
+URxvt*letterSpace: 0 
 
 ! Scrollbar
 URxvt.scrollStyle:          rxvt
