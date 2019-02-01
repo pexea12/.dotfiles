@@ -3,9 +3,10 @@
 	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"folder_exclude_patterns":
 	[
-		"node_modules",
 		".git",
-		"venv"
+		"vendor",
+		"node_modules",
+        "venv"
 	],
 	"font_face": "Fira Code",
 	"font_size": 12,

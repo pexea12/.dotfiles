@@ -161,8 +161,8 @@ exec_always feh --bg-scale ~/.config/i3/test_wallpaper.jpg
 
 # Print Screen
 bindsym Print exec scrot ~/foo.png && xclip -selection clipboard -t image/png ~/foo.png && rm -rf ~/foo.png
+bindsym --release $mod+Print exec scrot -s ~/foo.png && xclip -selection clipboard -t image/png ~/foo.png && rm -rf ~/foo.png
 bindsym $mod+Shift+Print exec scrot -u ~/foo.png && xclip -selection clipboard -t image/png ~/foo.png && rm -rf ~/foo.png
-bindsym $mod+Print exec sleep 0.5 && scrot -s ~/foo.png && xclip -selection clipboard -t image/png ~/foo.png && rm -rf ~/foo.png
 
 # Touchpad
 exec_always synclient HorizTwoFingerScroll=1 VertScrollDelta=-111 HorizScrollDelta=-111 PalmDetect=1 TapButton2=3 TapButton1=1
