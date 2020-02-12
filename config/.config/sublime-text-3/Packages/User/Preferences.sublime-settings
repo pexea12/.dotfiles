@@ -1,21 +1,23 @@
 {
 	"always_show_minimap_viewport": false,
-	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+	"color_scheme": "Monokai.sublime-color-scheme",
 	"folder_exclude_patterns":
 	[
 		".git",
 		"vendor",
 		"node_modules",
-        "venv"
+		"venv"
 	],
 	"font_face": "Fira Code",
-	"font_size": 12,
+	"font_size": 10,
 	"ignored_packages":
 	[
+		"EditorConfig",
+		"Vn Ime"
 	],
 	"tab_size": 4,
 	"telex": true,
-	"theme": "ayu-dark.sublime-theme",
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"ui_big_tabs": true,
 	"ui_fix_tab_labels": true,

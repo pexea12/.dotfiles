@@ -6,22 +6,9 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
-		"Anaconda",
-		"ayu",
 		"Babel",
 		"EditorConfig",
-<<<<<<< HEAD
 		"Package Control",
-		"Vn Ime",
 		"Vue Syntax Highlight"
-=======
-		"Emmet",
-		"Package Control",
-		"Vn Ime",
-		"Vue Syntax Highlight",
-		"Vuejs Snippets"
-		"Pug",
-		"TOML",
->>>>>>> 26fac2f8a4d9bdd77ac60a85889d6c32802b2bc0
 	]
 }

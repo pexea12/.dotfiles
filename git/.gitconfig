@@ -26,3 +26,5 @@
     acdc = "!f() { git a . && git cdc \"$1\" \"$2\"; }; f"
     acts = "!f() { git a . && git cts \"$1\" \"$2\"; }; f"
 
+[core]
+	editor = vim
