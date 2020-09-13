@@ -1,5 +1,5 @@
 [options]
-font = 12
+font = Monaco 9
 
 [colors]
 # Base16 Isotope
