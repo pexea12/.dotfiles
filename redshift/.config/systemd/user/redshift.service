@@ -1,0 +1,10 @@
+[Unit]
+Description=Redshift adjustment
+After=graphical.target network.target
+
+[Service]
+ExecStart=/usr/bin/redshift 
+Restart=always
+
+[Install]
+WantedBy=default.target
