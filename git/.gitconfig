@@ -1,30 +1,51 @@
 [user]
-    email = pexea12@gmail.com
-    name = Dzung Nguyen
-[alias]
-    cm = commit -m
-    a = add .
-    pl = pull origin
-    p = push origin
-    ch = checkout
-    b = branch
-    f = fetch origin
-    cft = "!f() { git cm \"feat($2): $1\"; }; f"
-    cfx = "!f() { git cm \"fix($2): $1\"; }; f"
-    cdc = "!f() { git cm \"docs($2): $1\"; }; f"
-    csl = "!f() { git cm \"style($2): $1\"; }; f"
-    crf = "!f() { git cm \"refactor($2): $1\"; }; f"
-	cts = "!f() { git cm \"test($2): $1\"; }; f"
-    ccr = "!f() { git cm \"chore($2): $1\"; }; f"
-
-    acm = "!f() { git a . && git cm \"$1\"; }; f"
-    acft = "!f() { git a . && git cft \"$1\" \"$2\"; }; f"
-    accr = "!f() { git a . && git ccr \"$1\" \"$2\"; }; f"
-    acrf = "!f() { git a . && git crf \"$1\" \"$2\"; }; f"
-    acsl = "!f() { git a . && git csl \"$1\" \"$2\"; }; f"
-    acfx = "!f() { git a . && git cfx \"$1\" \"$2\"; }; f"
-    acdc = "!f() { git a . && git cdc \"$1\" \"$2\"; }; f"
-    acts = "!f() { git a . && git cts \"$1\" \"$2\"; }; f"
-
+	email = pexea12@gmail.com
+	name = Dzung Nguyen
 [core]
-	editor = vim
+	editor = nvim
+	pager = less -FRX
+	untrackedcache = true
+	fsmonitor = true
+[init]
+  defaultBranch = main
+
+# Conditional config
+# Useful commands
+# git blame -L
+# git blame -w
+# git blame -C -C -C
+# git log -L
+# git log -S
+# git log --graph --oneline
+# git reflog
+# git diff --word-diff
+# git column --mode=column --padding=5
+# git commit -S
+# git cat-file -p HEAD
+# git maintenance start
+# git clone --filter=blob:none
+# git clone --filter=tree:0
+# git sparse-checkout
+# git ls-remote
+
+# git switch / git switch -c
+# git restore
+# git commit --fixup
+# git rebase --autosquash
+# git rebase --update-refs
+# git worktree
+
+[rerere]
+	enabled = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[alias]
+  pushf = push --force-with-lease --signed
+  push = push --signed
+  stash = stash --all
+[gpg]
+	format = ssh
+[fetch]
+	writeCommitGraph = true
