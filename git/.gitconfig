@@ -1,6 +1,7 @@
 [user]
-	email = pexea12@gmail.com
-	name = Dzung Nguyen
+	email = dzung.nguyen@wolt.com
+  name = Dzung Nguyen
+	signingkey = 5F426E8A11F8E414
 [core]
 	editor = nvim
 	pager = less -FRX
@@ -8,6 +9,11 @@
 	fsmonitor = true
 [init]
   defaultBranch = main
+[commit]
+  gpgsign = true
+  verbose = true
+[tag]
+  gpgsign = true
 
 # Conditional config
 # Useful commands
@@ -42,10 +48,9 @@
 [branch]
 	sort = -committerdate
 [alias]
-  pushf = push --force-with-lease --signed
-  push = push --signed
+  pushf = push --force-with-lease
   stash = stash --all
-[gpg]
-	format = ssh
 [fetch]
-	writeCommitGraph = true
+  writeCommitGraph = true
+[push]
+  autoSetupRemote = true
